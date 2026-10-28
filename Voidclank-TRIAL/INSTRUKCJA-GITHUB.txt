@@ -1,0 +1,16 @@
+VOIDCLANK TRIAL - INSTRUKCJA GITHUB
+1. Rozpakuj ZIP. Wejdz do folderu Voidclank-TRIAL.
+2. github.com -> New repository -> nazwa np. voidclank-trial -> Private -> Create.
+3. "uploading an existing file" -> przeciagnij ZAWARTOSC folderu Voidclank-TRIAL
+   (foldery .github, Source, Tools, Extras, Tests oraz CMakeLists.txt i README.md),
+   a NIE sam folder nadrzedny. Folder .github musi byc widoczny w repozytorium
+   (na telefonie/przegladarce utworz plik recznie: Add file -> Create new file,
+   nazwa: .github/workflows/build.yml i wklej tresc).
+4. Commit changes.
+5. Zakladka Actions -> "Build VST3" -> uruchomi sie samo (lub Run workflow).
+6. Po ok. 10-15 min kliknij zakonczony przebieg -> sekcja Artifacts:
+   Voidclank-Windows-VST3, Voidclank-Windows-Standalone (oraz Voidclank-macOS).
+7. Pobierz, rozpakuj. VST3: skopiuj Voidclank.vst3 do
+   C:\Program Files\Common Files\VST3\. Standalone: uruchom Voidclank.exe.
+Generator kluczy licencji: Actions -> "Build KEYGEN" -> Run workflow (tylko dla Ciebie,
+nigdy nie dawaj klientom; private.key trzymaj w sekrecie).
